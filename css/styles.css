@@ -136,6 +136,15 @@ nav a {
   border-radius: 08px;
 }
 
+.btn-banner:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn-banner a:hover{
+  color: white;
+}
+
 @media (max-width: 690px) {
   .btn-banner {
     width: 100%;
