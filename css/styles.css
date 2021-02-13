@@ -41,7 +41,7 @@ header {
 
 .nav-top {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: black;
   color: white;
@@ -72,17 +72,18 @@ header {
 
 .nav-infos {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: left;
   height: 90px;
 }
 
 .nav-infos li {
   width: 180px;
-  text-align: left;
+  text-align: right;
 }
 
 nav a {
+  text-align: center;
   font-size: 19px;
 }
 
@@ -199,7 +200,6 @@ nav a {
     background-position-x: 1030px;
     background-position-y: 230px;
     z-index: 50;
-
 }
 
 @media (max-width: 690px) {
@@ -478,7 +478,7 @@ footer {
   background-image: url(../550x975_footer.png);
   background-size: 100% 90%;
   background-repeat: no-repeat;
-  height: 650px;
+  height: 600px;
   width: 100%;
 }
 
