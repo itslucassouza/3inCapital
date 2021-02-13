@@ -13,12 +13,16 @@
   <!-- Bootstrap CSS -->
   <link href="css/slick/slick.css" rel="stylesheet">
   <link href="css/slick/slick-theme.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="./bootstrap-icons-1.0.0/">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+  <link rel="shortcut icon" href="./img/simbolo - verde azulado.svg" />
+
   <link href="font-awesome\css\font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>3in Capital</title>
@@ -43,7 +47,7 @@
           </li>
          
           <li class="nav-item active">
-            <a class="nav-link" href="#contato">Contato <span class="sr-only">(current)</span></a>
+            <a class="nav-link" id="contato" href="#contatonav">Contato <span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
@@ -72,162 +76,132 @@
 
   </div>
 
-  <!-- end mega banner-->
-
-  <section class="info-services">
-    <div class="container">
+  <!-- Grid -->
+  <section class="info-services main">
+    <div class="fundo">
       <h3 id="servicos">Nossos Serviços</h3>
-      <div class="row">
-        <div class="col-12 col-md-5 fundo">
-
+  
          <h5>Fundo de investimento</h5>
-
          <p>
           Auxiliamos no desenvolvimento de serviços e/ou produtos através de capital financeiro, buscando estruturar, ampliar e firmar novos modelos de negócio dentro do mercado nacional. 
           </p>
-        </div>
-
-        <div class="col-12 col-md-5 capital">
-          <h5>Capital Intelectual  </h5>
-
-         <p>
-          O Grupo 3IN conta com sócios fundadores originários de diferentes segmentos e experiências, somando mais de 20 anos de atuação no mercado. Desta forma, entregando direcionamento e vasto conhecimento para dar start nas novas empresas.    
-          </p>
-        </div>
-
-      </div>  
     </div>
-  </section>
 
-  <section class="info-services main">
-    <div class="container ">
-      <div class="row">
-        <div class="col-12 col-md-5 empresas">
 
-         <h1 id="empresas">Empresas</h1>
+    <!-- capital -->
+    <div class="capital">
+      <h5>Capital Intelectual  </h5>
 
-         <p>
-          Atualmente o grupo conta com 3 empresas na área da tecnologia em sua carteira de investimentos. Conheça um pouco mais sobre a Desk Manager, Hosts.Green e Keruak Software.  
-
-          </p>
-        </div>
-
-        <div class="col-12 col-md-5 desk">
-          <!-- <h5>Desk Manager
-          </h5> -->
-
-          <img class="keruak-img" src="./logo desk.svg">
-          
-          <h4>Um software de gestão de atendimentos e controle de chamados
-          </h4>
-
-         <p>
-          A Desk Manager é um software de atendimento omnichannel de help desk, service desk, SAC e CSC que controla e organiza chamados, otimiza a gestão de atendimentos e possui dashboards dinâmicos divididos por aplicativos que facilitam a operação de um negócio. São diversas funcionalidades para uma gestão completa e centralizada no cliente. Suporte online, abertura de chamados, gerenciamento de projetos, ponto digital, suporte técnico e muito mais.
-          </p>
-          <div class="btn-banner">
-            <a href="https://deskmanager.com.br/">
-              Clique para mais informações
-            </a>
-          </div>
-        </div>
-
-      </div>  
+     <p>
+      O Grupo 3IN conta com sócios fundadores originários de diferentes segmentos e experiências, somando mais de 20 anos de atuação no mercado. Desta forma, entregando direcionamento e vasto conhecimento para dar start nas novas empresas.    
+      </p>
     </div>
-  </section>
 
-  <section class="info-services main2 main">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-5 empresas hosts">
+    <!-- empresas -->
+    <div class="empresas">
 
-         <!-- <h5>Hosts.Green</h5> -->
-         <img class="keruak-img" src="./logo hosts.svg">
+      <h1 id="empresas">Empresas</h1>
 
-         <h4>Software em SaaS que monitora <br>
-        Aplciativos web , URL's e links
-        </h4>
+      <p>
+       Atualmente o grupo conta com 3 empresas na área da tecnologia em sua carteira de investimentos. Conheça um pouco mais sobre a Desk Manager, Hosts.Green e Keruak Software.  
 
-         <p>
-          Hosts.Green é um software que permite o monitoramento de hosts em tempo real, 
-          além de tornar transparente o status da aplicação para clientes. 
-          O sistema conta com integrações importantes e permite receber alerta 
-          de diversos canais como: E-mail, WhatsApp, Telegram, SMS, Slack, 
-          Microsoft Teams, Twilio, Discord, NVoip, Webhook e Google Chat. 
-          Apresenta também abertura e fechamento de chamados com Desk Manager 
-          e Zendesk, e possibilidade de integração com Zabbix e Solarwinds RMM, 
-          facilitando a experiência de seus usuários. 
-          </p>
+       </p>
+     </div>
+    
+     <!-- desk -->
+     <div class="desk">
+      <img class="keruak-img" src="./img/logo desk.svg">
+      
+      <h4>Um software de gestão de atendimentos e controle de chamados
+      </h4>
 
-          <div class="btn-banner">
-            <a href="https://hosts.green/">
-              Clique para mais informações
-            </a>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-5 keruak">
-          <!-- <h5>KERUAK
-          </h5> -->
-
-          <img class="keruak-img" src="./logo Keruak.svg"">
-
-          <h4>Software de Gestão Financeira para pequenas e médias empresas
-          </h4>
-
-         <p>
-          O Keruak Software possui os recursos necessários para controlar todas as movimentações financeiras do seu negócio.<br>
-          É indicado para pequenas e médias empresas que precisam de suporte na área de gestão e controle financeiro.<br><br>
-           A plataforma busca simplificar e tornar essas operações fáceis através de serviços como emissão de notas fiscais, boletos ilimitados e gestão de contratos.<br> 
-          </p>
-          <div class="btn-banner">
-            <a href="#">
-              Clique para mais informações
-            </a>
-          </div>
-        </div>
-
-      </div>  
-    </div>
-  </section>
-
-  <footer>
-  <div class="container">
-    <div class="row">
-          <div class="col-12 col-md-6 rdp-content">
-
-          <h3>Estamos prontos <br>
-          para ajudar você <br>
-        e a sua equipe</h3>
-
-        <p>R. João Cardoso de Siqueira Primo, 65 - Conjunto 51 Vila<br>
-        Hélio, Mogi das  Cruzes, São paulo - Brasil<br>
-        08710-530
-        contato@3incapital.com.br<br>
-        +55 (11) 2146-0000</p>
-
-        <a href="https://www.linkedin.com/company/3in-capital/">
-          <img src="/linkedin (1).svg">
+     <p>
+      A Desk Manager é um software de atendimento omnichannel de help desk, service desk, SAC e CSC que controla e organiza chamados, otimiza a gestão de atendimentos e possui dashboards dinâmicos divididos por aplicativos que facilitam a operação de um negócio. São diversas funcionalidades para uma gestão completa e centralizada no cliente. Suporte online, abertura de chamados, gerenciamento de projetos, ponto digital, suporte técnico e muito mais.
+      </p>
+      <div class="btn-banner">
+        <a href="https://deskmanager.com.br/">
+          Clique para mais informações
         </a>
       </div>
+    </div>
 
-      <div class="col-12 col-md-6">
-        <form class="formulario" id="contato">
-            <!--[if lte IE 8]>
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-            <![endif]-->
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-              hbspt.forms.create({
-                portalId: "2750159",
-                formId: "ee106d7f-9554-4f30-8767-8d9b8626f818"
-            });
-            </script>
-        </form>
+
+    <div class=" hosts">
+
+      <!-- <h5>Hosts.Green</h5> -->
+      <img class="keruak-img" src="./img/logo hosts.svg">
+
+      <h4>Software em SaaS que monitora <br>
+     Aplciativos web , URL's e links
+     </h4>
+
+      <p>
+       Hosts.Green é um software que permite o monitoramento de hosts em tempo real, 
+       além de tornar transparente o status da aplicação para clientes. 
+       O sistema conta com integrações importantes e permite receber alerta 
+       de diversos canais como: E-mail, WhatsApp, Telegram, SMS, Slack, 
+       Microsoft Teams, Twilio, Discord, NVoip, Webhook e Google Chat. 
+       Apresenta também abertura e fechamento de chamados com Desk Manager 
+       e Zendesk, e possibilidade de integração com Zabbix e Solarwinds RMM, 
+       facilitando a experiência de seus usuários. 
+       </p>
+
+       <div class="btn-banner">
+         <a href="https://hosts.green/">
+           Clique para mais informações
+         </a>
+       </div>
+     </div>
+
+     <!-- kearuak -->
+     <div class="keruak">
+      <img class="keruak-img" src="./img/logo Keruak.svg"">
+
+      <h4>Software de Gestão Financeira para pequenas e médias empresas
+      </h4>
+
+     <p>
+      O Keruak Software possui os recursos necessários para controlar todas as movimentações financeiras do seu negócio.<br>
+      É indicado para pequenas e médias empresas que precisam de suporte na área de gestão e controle financeiro.<br><br>
+       A plataforma busca simplificar e tornar essas operações fáceis através de serviços como emissão de notas fiscais, boletos ilimitados e gestão de contratos.<br> 
+      </p>
+      <div class="btn-banner">
+        <a href="#">
+          Clique para mais informações
+        </a>
       </div>
+    </div>
+  </section>  
 
-    </div>  
-  </div>
-  </footer>
+  <div class="footer">
+      <div class="rdp-content">
+        <div>
+          <h3>Estamos prontos <br>
+          para ajudar você <br>
+            e a sua equipe</h3>
+            <p>R. João Cardoso de Siqueira Primo, 65 - Conjunto 51 Vila<br>
+            Hélio, Mogi das  Cruzes, São paulo - Brasil<br>
+            08710-530</p>
+            <p>contato@3incapital.com.br</p>
+            <p>+55 (11) 2146-0000</p>
+          <a href="https://www.linkedin.com/company/3in-capital/">
+            <img src="./img/linkedin (1).svg">
+          </a>
+        </div>
+      </div>
+        <div  class="formulario">
+          <form class="formulario" id="contato">
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+              <script>
+                hbspt.forms.create({
+                  portalId: "2750159",
+                  formId: "ee106d7f-9554-4f30-8767-8d9b8626f818"
+              });
+              </script>
+          </form>
+        </div>
+    </div>
+
   <div class="main-rdp">
     <div>
       <img class="img-rdp" src="./img/logo - símbolo azul.png">

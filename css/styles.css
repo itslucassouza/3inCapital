@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 elemento {
   --cor-primary: #121630;
@@ -15,9 +16,12 @@ html,
 div,
 p {
   z-index: 3;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  line-height: 1.5;
 }
+
 
 
 .navbar-main {
@@ -51,6 +55,10 @@ header {
 .logo {
   height: 40px;
   margin-left: 55px;
+}
+
+#contatonav {
+  margin-right: 145px;
 }
 
 @media (max-width: 690px) {
@@ -99,7 +107,7 @@ nav a {
 
 /* end header */
 .mega-banner {
-  background-image: url(../Banner_1920x500.png);
+  background-image: url(../img/Banner_1920x500.png);
   background-position: right;
   height: 500px;
   text-align: justify;
@@ -107,6 +115,7 @@ nav a {
   padding: 90px;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 @media (max-width: 690px) {
@@ -123,9 +132,11 @@ nav a {
 .mega-banner p {
   text-align: justify;
   font-size: 15px;
-  font-weight: 700;
+  line-height: 1.2;
+  font-weight: 400;
   font-family: "Montserrat", sans-serif;
 }
+
 .mega-banner h3 {
   font-size: 60px;
   font-weight: 900;
@@ -153,6 +164,16 @@ nav a {
   justify-content: center;
   margin-top: 10px;
   border-radius: 08px;
+}
+
+.btn-banner p{
+  font-size: 16px;
+}
+
+@media (max-width: 690px) {
+  .btn-banner{
+    font-size: 15px;
+  }
 }
 
 .btn-banner:hover {
@@ -187,85 +208,61 @@ nav a {
 
 /* section clube-de-tiro */
 .info-services {
-  height: 450px;
-  margin: -15px ;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-gap: 8px;
+  padding: 0 90px;
   height: auto;
   color: black;
   width: 100%;
-  height: 350px;
-  margin-bottom: -50px;
-    background-image: url(../img/circulo\ verde\ -\ empresas.png);
-    background-repeat: no-repeat;
-    background-size:200px;
-    background-position-x: 1030px;
-    background-position-y: 230px;
-    z-index: 50;
+  background-image: url(../img/circulo\ verde\ -\ empresas.png);
+  background-repeat: no-repeat;
+  background-size:200px;
+  background-position-x: 1100px;
+  background-position-y: 178px;
+  z-index: 50;
 }
 
 @media (max-width: 690px) {
   .info-services {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0px;
-    height: auto;
+  grid-template-columns: 12fr;
+  padding: 20px;
   }
 }
 
 .info-services h3 {
-  font-size: 40px;
-  margin: -30px 0px 15px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 0 20px 0 0;
 }
 
-@media (max-width: 690px) {
-  .info-services h3 {
-    font-size: 40px;
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-  }
-}
-
-.info-services h5 {
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  
-}
 
 .info-services p {
   text-align: justify;
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
 }
+
 
 .fundo {
-  margin: 20px;
+  width: 100%;
   text-align: justify;
-}
-
-@media (max-width: 690px) {
-  .fundo {
-    margin: 0;
-    text-align: justify;
-  }
-
 }
 
 .fundo h5 {
   font-family: "Montserrat", sans-serif;
-  padding: 30px 0px;
+  font-weight: 900;
+  padding: 25px 0px;
 }
 
+
 .capital {
-  margin: 20px;
+  margin: 26px 20px;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
-  
-
 }
 
 @media (max-width: 690px) {
@@ -279,18 +276,11 @@ nav a {
 .capital h5 {
   font-family: "Montserrat", sans-serif;
   padding: 30px 0px;
+  font-weight: 900;
 }
 
-.main {
-  height: 450px;
-  margin: -15px ;
 
-  background-image: url(../img/simbolo\ -\ verde\ azulado.png);
-  background-repeat: no-repeat;
-  background-size:contain;
-  background-position-x: -100px;
-  background-position-y: 130px;
-}
+
 
 @media (max-width: 690px) {
   .main {
@@ -305,12 +295,12 @@ nav a {
 }
 
 .empresas {
-
-
-  z-index: 10;
-  background-size: 340px;
-  margin: 20px;
   padding-top: 25px;
+  background-image: url(../img/simbolo\ -\ verde\ azulado.png);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position-x: -55px;
+  background-position-y: 100px;
 }
 
 @media (max-width: 690px) {
@@ -324,7 +314,7 @@ nav a {
 
 .empresas h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 800;
   padding: 0 20px 0 0;
 }
@@ -335,37 +325,20 @@ nav a {
 }
 
 .desk {
-  margin: 20px;
   background-color: #00b7ff;
-  display: flex;
+  width: 90%;
+  padding: 50px 50px;
+  height: 450px;
   line-height: 1.3;
-  flex-direction: column;
   text-align: left;
-  margin-bottom: 110px;
-  padding: 25px;
-  height: 400px;
-  width: 100px;
-}
-
-@media (max-width: 690px) {
-  .desk {
-    margin: 04px;
-    background-color: #00b7ff;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-bottom: 15px;
-    padding: 25px;
-    height: 490px;
-    width: 100px;
-  }
+  margin-bottom: 10px;
 }
 
 .desk h5 {
   margin-bottom: 15px;
   font-size: 35px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .desk h4 {
@@ -375,31 +348,34 @@ nav a {
   font-weight: 700;
 }
 
+@media (max-width: 690px) {
+  .desk {
+    height: auto;
+    width: auto;
+    padding: 05px;
+  }
+}
+
+
+
+
+
 .hosts {
-  margin: 20px;
   background-color: #30cd9a;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-bottom: 110px;
-  padding: 11px 35px;
-  padding: 25px;
+  width: 90%;
+  padding: 50px 50px;
+  height: 470px;
   line-height: 1.3;
-  height: 400px;
-  width: 100px;
+  text-align: left;
+  margin-bottom: 30px;
+
 }
 
 @media (max-width: 690px) {
   .hosts {
-    margin: 04px;
-    background-color: #30cd9a;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-bottom: 15px;
-    padding: 25px;
-    height: 520px;
-    width: 100px;
+    height: auto;
+    width: auto;
+    padding: 05px;
   }
 }
 
@@ -411,37 +387,27 @@ nav a {
 }
 
 .hosts h4 {
-  margin-bottom: 12px;
-  font-size: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 .keruak {
-  margin: 20px;
-  line-height: 1.3;
   background-color: #2fb6bc;
-  display: flex;
-  flex-direction: column;
+  width: 90%;
+  padding: 50px 50px;
+  height: 470px;
+  line-height: 1.3;
   text-align: left;
-  margin-bottom: 110px;
-  padding: 11px 35px;
-  height: 400px;
-  width: 100px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 690px) {
   .keruak {
-    margin: 04px;
-    background-color: #2fb6bc;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-bottom: 15px;
-
-    padding: 25px;
-    height: 460px;
-    width: 100px;
+    height: auto;
+    width: auto;
+    padding: 05px;
   }
 }
 
@@ -474,144 +440,116 @@ nav a {
   font-weight: 700;
 }
 
-footer {
-  background-image: url(../550x975_footer.png);
-  background-size: 100% 90%;
+.footer {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  background-image: url(../img/footer_black_final.png);
+  background-size: 100%;
+  grid-gap: 8px;
+    padding: 0 90px;
   background-repeat: no-repeat;
-  height: 600px;
   width: 100%;
+  justify-content: center;
+  height: 540px;
 }
 
 @media (max-width: 690px) {
-  footer {
-    background-color: black;
-    height: auto;
-    width: 100%;
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
 }
 
-footer h3 {
+.footer h3 {
   margin-bottom: 15px;
   font-size: 45px;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
 
+@media (max-width: 690px) {
+  .footer {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+  }
+}
+
+
+
 .rdp-content {
-  background-position: center;
-  height: 500px;
+  margin-top: 70px;
   line-height: 2.0;
   text-align: justify;
   text-align: left;
   width: 100%;
-  padding: 90px;
   color: white;
-  font-size: 16px;
+  font-size: 13px;
+  font-weight: 900;
   font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 690px) {
   .rdp-content {
-    background-position: center;
-    text-align: justify;
-    text-align: left;
-    width: 100%;
-    color: white;
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-  }
+  margin: 0;
 
+  padding: 20px;
+  }
 }
 
 
 .formulario {
-  margin-top: 30px;
-  height: 500px;
-
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-
-.formulario input{
-  width: 68%;
-  color: white;
-  border: 3px solid white;
-  margin-bottom: 15px;
-  background-color: black;
-  width: 450px;
-  padding: 15px;
-}
-
 
 @media (max-width: 690px) {
   .formulario {
-    height: 720px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
-.formulario input{
-  color: white;
-  border: 3px solid white;
-  margin-bottom: 15px;
-  background-color: black;
-  width: 450px;
-  padding: 15px;
-}
-
-@media (max-width: 690px) {
-  .formulario input{
-    border: 3px solid white;
-    margin-bottom: 15px;
-    background-color: black;
-    width: 100%;
-    padding: 15px;
-  }
-}
-
-.formulario textarea{
-  background-color: black;
-  width: 100%;
-  padding: 15px 50px 50px 15px;
-  border: 3px solid white;
-  color: white;
-}
-
-@media (max-width: 690px) {
-  .formulario textarea{
-    border: 3px solid white;
-    margin-bottom: 15px;
-    background-color: black;
-    width: 100%;
-    padding: 15px;
-  }
-}
 
 .main-rdp{
   display: flex;
   width: 100%;
+  margin-top: 50px;
+  height: 10px;
   align-items: center;
   justify-content: space-around;
 }
 
 @media (max-width: 690px) {
   .main-rdp{
-    display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: center;
+    padding: 00px;
+    height: auto;
+    margin: 20px 0;
   }
   
 }
-
+.main-rdp p{
+  margin-top: 13px;
+  color: black;
+}
 .main-rdp a{
   margin-left: 19px;
   color: black;
 }
 
 .img-rdp{
-  height: 120px;
+  height: 90px;
   margin: 30px;
 }
 
