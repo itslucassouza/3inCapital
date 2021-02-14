@@ -137,8 +137,9 @@ nav a {
 .mega-banner p {
   text-align: justify;
   font-size: 15px;
-  line-height: 1.2;
-  font-weight: 400;
+  color: black;
+  line-height: 1.7;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -160,19 +161,28 @@ nav a {
   color: white;
 }
 
-.btn-banner {
-  width: 290px;
-  background: white;
-  display: flex;
-  align-items: center;
-  padding: 08px;
-  justify-content: center;
-  margin-top: 10px;
-  border-radius: 08px;
+.btn-banner button{
+  border: none;
 }
 
-.btn-banner p{
-  font-size: 16px;
+.main-btn button{
+  border: none;
+    border-radius: 10px;
+    border: none;
+    width: 230px;
+    height: 34px;
+}
+
+.main-btn a{
+  color: inherit;
+}
+
+a:link{
+  color: white;
+}
+button:hover{
+  background: black;
+  color: white;
 }
 
 @media (max-width: 690px) {
@@ -181,14 +191,9 @@ nav a {
   }
 }
 
-.btn-banner:hover {
-  color: white;
-  background-color: black;
-}
 
-.btn-banner a:hover{
-  color: white;
-}
+
+
 
 @media (max-width: 690px) {
   .btn-banner {
@@ -203,13 +208,6 @@ nav a {
   }
 }
 
-
-
-.btn-banner a {
-  font-family: sans-serif;
-  color: black;
-  font-weight: 900;
-}
 
 /* section clube-de-tiro */
 .info-services {
@@ -527,12 +525,10 @@ nav a {
 
 
 .main-rdp{
-  display: flex;
-  width: 100%;
-  margin-top: 50px;
-  height: 10px;
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  padding: 0 90px;
   align-items: center;
-  justify-content: space-around;
 }
 
 @media (max-width: 690px) {
@@ -557,6 +553,7 @@ nav a {
   height: 90px;
   margin-top: 30px;
   margin-right: 180px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 690px) {
