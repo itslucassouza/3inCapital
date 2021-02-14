@@ -172,7 +172,11 @@ nav a {
     width: 230px;
     height: 34px;
 }
-
+@media (max-width: 690px) {
+  .main-btn button{
+    width: 100%;
+  }
+}
 .main-btn a{
   color: inherit;
 }
@@ -187,7 +191,8 @@ button:hover{
 
 @media (max-width: 690px) {
   .btn-banner{
-    font-size: 15px;
+
+    font-size: 10px;
   }
 }
 
@@ -255,6 +260,14 @@ button:hover{
   text-align: justify;
 }
 
+@media (max-width: 690px) {
+  .fundo {
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+  }
+}
+
 .fundo h5 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -265,12 +278,12 @@ button:hover{
 .capital {
   margin: 26px 20px;
   font-family: "Montserrat", sans-serif;
-  text-align: justify;
+   text-align: justify;
 }
 
 @media (max-width: 690px) {
   .capital {
-    margin: 0;
+    padding: 10px;
     font-family: "Montserrat", sans-serif;
     text-align: justify;
   }
@@ -308,8 +321,7 @@ button:hover{
 
 @media (max-width: 690px) {
   .empresas {
-    margin: 10px;
-    padding-top: 25px;
+    padding: 20px;
   }
 
 }
@@ -355,7 +367,7 @@ button:hover{
   .desk {
     height: auto;
     width: auto;
-    padding: 05px;
+     padding: 15px;
   }
 }
 
@@ -378,7 +390,7 @@ button:hover{
   .hosts {
     height: auto;
     width: auto;
-    padding: 05px;
+    padding: 15px;
   }
 }
 
@@ -410,7 +422,7 @@ button:hover{
   .keruak {
     height: auto;
     width: auto;
-    padding: 05px;
+    padding: 15px;
   }
 }
 
@@ -533,10 +545,12 @@ button:hover{
 
 @media (max-width: 690px) {
   .main-rdp{
+    display: flex;
+    width: 100%;
     flex-direction: column;
-    padding: 00px;
-    height: auto;
-    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
   }
   
 }
@@ -548,18 +562,22 @@ button:hover{
   margin-left: 19px;
   color: black;
 }
+@media (max-width: 690px) {
+.main-rdp a{
+  margin: 10 auto;
+}
+}
 
 .img-rdp{
   height: 90px;
-  margin-top: 30px;
+  margin-top: 30px; 
   margin-right: 180px;
   margin-bottom: 20px;
 }
 
 @media (max-width: 690px) {
   .img-rdp{
-    height: 90px;
-    margin-top: 30px 90px;
+        margin: 05px auto;
   }
 }
 
