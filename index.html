@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="./css/styles.css" rel="stylesheet">
   <link rel='stylesheet' href='./css/bootstrap.min.css'/>
+  <link rel='stylesheet' href='./css/animateheadline.css'/>
 
   <!-- Bootstrap CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -17,30 +18,26 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg nav-top ">
+    <nav class="navbar navbar-expand-lg nav-top">
       <div class="container header">
-      <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
-      <button class="navbar-toggler ml-auto custom-toggler" type="button" 
-      data-target="collapsingNavbar"
-      data-toggle="collapse">
-      <span class="navbar-toggler-icon"></span>
-      </button>
+        <a class="navbar-brand" href="/"><img class="logo" src="img/logo.png"></a>
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-target="#collapsingNavbar" data-toggle="collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
       <div class="collapse navbar-collapse nav-infos" id="collapsingNavbar">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#servicos">Nossos Serviços </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#empresas">Empresas</a>
           </li>
-         
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" id="contatonav" href="#contato">Contato </a>
           </li>
         </ul>
       </div>
-    </div>
     </nav>
 
 
@@ -48,37 +45,43 @@
 
   <!-- Banner carousel -->
   <div class="mega-banner">
-    <h3><span>In</span>vestimento |</h3>
+    <div class="cd-intro">
+      <h3 class="cd-headline clip">
+        <span class="white-txt">In</span><span class="cd-words-wrapper">
+          <b class="is-visible">vestimento</b>
+          <b>ovação</b>
+          <b>ternet</b>
+        </span>
+      </h3>
+    </div>
 
-    <p> Grupo 3IN Capital foi fundado em 2015 e atualmente conta com os sócios Célio Fabiano e <br>
-      Abraão Almeida. Uma holding administradora de empresas para negócios que buscam por <br>
-       escala e solidez a longo prazo, apoiando com fundo de investimento e capital intelectual para <br>
-        startups e novas empresas. Neste momento o Grupo 3IN Capital está à frente das empresas Desk<br>
-         Manager, Keruak Software e Hosts.Green. 
-        </p>
-        <div class="main-btn">
+    <p class="w-45"><b>
+      Grupo 3IN Capital foi fundado em 2015 e atualmente conta com os sócios Célio Fabiano e 
+      Abraão Almeida. Uma holding administradora de empresas para negócios que buscam por
+      escala e solidez a longo prazo, apoiando com fundo de investimento e capital intelectual para 
+      startups e novas empresas. Neste momento o Grupo 3IN Capital está à frente das empresas Desk
+      Manager, Keruak Software e Hosts.Green.
+    </></p>
+    <div class="main-btn">
 
-          <a href="#contato">
-            <button class="btn-banner" type="button"  >
-              
-                Entre em contato
-    
-              </a>
-            </button>
+      <a href="#contato" target="_blank">
+        <button class="btn-banner" type="button" >
+          Entre em contato
+        </button>
+      </a>
 
-          </a>
-        </div>
+    </div>
   </div>
 
   <!-- Grid -->
+  <h3 id="servicos">Nossos Serviços</h3>
   <section class="info-services main">
     <div class="fundo">
-      <h3 id="servicos">Nossos Serviços</h3>
-  
-         <h5>Fundo de investimento</h5>
-         <p>
-          Auxiliamos no desenvolvimento de serviços e/ou produtos através de capital financeiro, buscando estruturar, ampliar e firmar novos modelos de negócio dentro do mercado nacional. 
-          </p>
+
+      <h5>Fundo de investimento</h5>
+      <p>
+        Auxiliamos no desenvolvimento de serviços e/ou produtos através de capital financeiro, buscando estruturar, ampliar e firmar novos modelos de negócio dentro do mercado nacional.
+      </p>
     </div>
 
 
@@ -86,8 +89,8 @@
     <div class="capital">
       <h5>Capital Intelectual  </h5>
 
-     <p>
-      O Grupo 3IN conta com sócios fundadores originários de diferentes segmentos e experiências, somando mais de 20 anos de atuação no mercado. Desta forma, entregando direcionamento e vasto conhecimento para dar start nas novas empresas.    
+      <p>
+        O Grupo 3IN conta com sócios fundadores originários de diferentes segmentos e experiências, somando mais de 20 anos de atuação no mercado. Desta forma, entregando direcionamento e vasto conhecimento para dar start nas novas empresas.
       </p>
     </div>
 
@@ -97,30 +100,30 @@
       <h1 id="empresas">Empresas</h1>
 
       <p>
-       Atualmente o grupo conta com 3 empresas na área da tecnologia em sua carteira de investimentos. Conheça um pouco mais sobre a Desk Manager, Hosts.Green e Keruak Software.  
+        Atualmente o grupo conta com 3 empresas na área da tecnologia em sua carteira de investimentos. Conheça um pouco mais sobre a Desk Manager, Hosts.Green e Keruak Software.
 
-       </p>
-     </div>
-    
-     <!-- desk -->
-     <div class="desk">
-  
+      </p>
+    </div>
+
+    <!-- desk -->
+    <div class="desk">
+
       <img class="keruak-img" src="./img/logo desk.svg">
-      
+
       <h4>Um software de gestão de atendimentos e controle de chamados
       </h4>
 
-     <p>
-      A Desk Manager é um software de atendimento omnichannel de help desk, service desk, SAC e CSC que controla e organiza chamados, otimiza a gestão de atendimentos e possui dashboards dinâmicos divididos por aplicativos que facilitam a operação de um negócio. São diversas funcionalidades para uma gestão completa e centralizada no cliente. Suporte online, abertura de chamados, gerenciamento de projetos, ponto digital, suporte técnico e muito mais.
+      <p>
+        A Desk Manager é um software de atendimento omnichannel de help desk, service desk, SAC e CSC que controla e organiza chamados, otimiza a gestão de atendimentos e possui dashboards dinâmicos divididos por aplicativos que facilitam a operação de um negócio. São diversas funcionalidades para uma gestão completa e centralizada no cliente. Suporte online, abertura de chamados, gerenciamento de projetos, ponto digital, suporte técnico e muito mais.
       </p>
       <div class="main-btn">
-        <a href="https://deskmanager.com.br/">
+        <a href="https://deskmanager.com.br/" target="_blank">
           <button class="btn-banner" type="button" >
             Clique para mais informações
           </button>
         </a>
 
-    </div>
+      </div>
     </div>
 
 
@@ -130,43 +133,43 @@
       <img class="keruak-img" src="./img/logo hosts.svg">
 
       <h4>Software em SaaS que monitora <br>
-     Aplciativos web , URL's e links
-     </h4>
+        Aplicativos web , URL's e links
+      </h4>
 
       <p>
-       Hosts.Green é um software que permite o monitoramento de hosts em tempo real, 
-       além de tornar transparente o status da aplicação para clientes. 
-       O sistema conta com integrações importantes e permite receber alerta 
-       de diversos canais como: E-mail, WhatsApp, Telegram, SMS, Slack, 
-       Microsoft Teams, Twilio, Discord, NVoip, Webhook e Google Chat. 
-       Apresenta também abertura e fechamento de chamados com Desk Manager 
-       e Zendesk, e possibilidade de integração com Zabbix e Solarwinds RMM, 
-       facilitando a experiência de seus usuários. 
-       </p>
-       <div class="main-btn">
-         <a href="https://hosts.green/">
+        Hosts.Green é um software que permite o monitoramento de hosts em tempo real,
+        além de tornar transparente o status da aplicação para clientes.
+        O sistema conta com integrações importantes e permite receber alerta
+        de diversos canais como: E-mail, WhatsApp, Telegram, SMS, Slack,
+        Microsoft Teams, Twilio, Discord, NVoip, Webhook e Google Chat.
+        Apresenta também abertura e fechamento de chamados com Desk Manager
+        e Zendesk, e possibilidade de integração com Zabbix e Solarwinds RMM,
+        facilitando a experiência de seus usuários.
+      </p>
+      <div class="main-btn">
+        <a href="https://hosts.green/" target="_blank">
           <button class="btn-banner" type="button" >
             Clique para mais informações
           </button>
         </a>
-        </div>
-         
-     </div>
+      </div>
 
-     <!-- kearuak -->
-     <div class="keruak">
-      <img class="keruak-img" src="./img/logo Keruak.svg"">
+    </div>
 
-      <h4>Software de Gestão Financeira para pequenas e médias empresas
+    <!-- kearuak -->
+    <div class="keruak">
+      <img class="keruak-img-main" src="./img/logo Keruak.svg">
+      <h4>
+        Software de Gestão Financeira para pequenas e médias empresas
       </h4>
 
-     <p>
-      O Keruak Software possui os recursos necessários para controlar todas as movimentações financeiras do seu negócio.<br>
-      É indicado para pequenas e médias empresas que precisam de suporte na área de gestão e controle financeiro.<br><br>
-       A plataforma busca simplificar e tornar essas operações fáceis através de serviços como emissão de notas fiscais, boletos ilimitados e gestão de contratos.<br> 
+      <p>
+        O Keruak Software possui os recursos necessários para controlar todas as movimentações financeiras do seu negócio.
+        É indicado para pequenas e médias empresas que precisam de suporte na área de gestão e controle financeiro.
+        A plataforma busca simplificar e tornar essas operações fáceis através de serviços como emissão de notas fiscais, boletos ilimitados e gestão de contratos.
       </p>
       <div class="main-btn">
-        <a href="https://keruak.com.br/">
+        <a href="https://keruak.com.br/" target="_blank">
           <button class="btn-banner" type="button" href="https://keruak.com.br/">
             Clique para mais informações
           </button>
@@ -174,60 +177,67 @@
       </div>
 
     </div>
-  </section>  
+  </section>
 
   <div class="footer">
-      <div class="rdp-content">
-        <div>
-          <h3>Estamos prontos <br>
+    <div class="rdp-content">
+      <div class="w-lg-50">
+        <h3>Estamos prontos <br>
           para ajudar você <br>
-            e a sua equipe</h3>
-            <p>R. João Cardoso de Siqueira Primo, 65 - Conjunto 51 Vila<br>
-            Hélio, Mogi das  Cruzes, São paulo - Brasil<br>
-            08710-530</p>
+          e a sua equipe</h3>
+            <p>
+              R. João Cardoso de Siqueira Primo, 65 - Conjunto 51 Vila
+
+              Hélio, Mogi das  Cruzes, São paulo - Brasil
+            </p>
+            <p>
+              08710-530
+            </p>
             <p>contato@3incapital.com.br</p>
             <p>+55 (11) 2146-0000</p>
-          <a href="https://www.linkedin.com/company/3in-capital/">
-            <img src="./img/linkedin (1).svg">
-          </a>
+            <a href="https://www.linkedin.com/company/3in-capital/">
+              <img src="./img/linkedin (1).svg">
+            </a>
+          </div>
+        </div>
+
+        <div class="formulario" id="contato">
+
+          <!--[if lte IE 8]>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+          <![endif]-->
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              portalId: "2750159",
+              formId: "ee106d7f-9554-4f30-8767-8d9b8626f818"
+            });
+          </script>
+
         </div>
       </div>
-      <div class="formulario" id="contato">
 
-        <!--[if lte IE 8]>
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-        <![endif]-->
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-        <script>
-          hbspt.forms.create({
-            portalId: "2750159",
-            formId: "ee106d7f-9554-4f30-8767-8d9b8626f818"
-        });
-        </script>
+      <div class="main-rdp">
+        <div>
+          <img class="img-rdp" src="./img/logo - simbolo azul.png">
 
+        </div>
+        <div>
+          <a href="#servicos">Nossos serviços</a>
+          <a href="#empresas">Empresas</a>
+          <a href="#contato">Contato</a>
+
+        </div>
+        <p>Politica de privacidade © 2020 3inCaital</p>
       </div>
-    </div>
 
-  <div class="main-rdp">
-    <div>
-      <img class="img-rdp" src="./img/logo - símbolo azul.png">
 
-    </div>
-    <div>
-      <a href="#servicos">Nossos serviços</a>
-      <a href="#empresas">Empresas</a>
-      <a href="#contato">Contato</a>
+      <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/animatedheadline.js"></script>
+    </body>
 
-    </div>
-      <p>Politica de privacidade © 2020 3inCaital</p>
-  </div>
-
-  
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
-  <script src="./js/bootstrap.min.js"></script>
-</body>
-
-</html>
+    </html>

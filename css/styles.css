@@ -22,7 +22,24 @@ p {
   line-height: 1.5;
 }
 
+body{
+  background: #EFEFEF;
+  background-image: url(../img/simbolo\ -\ verde\ azulado.png);
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position-x: -199px;
+  background-position-y: 1200px;
+}
 
+@media (max-width: 690px) {
+  body{
+    background-image:none;
+  }
+}
+
+.thickborder-r{
+  border-right: solid 1px #000;
+}
 
 .navbar-main {
   height: 90px;
@@ -43,6 +60,10 @@ header {
   border-color: white;
 }
 
+.navbar-brand{
+  margin-left: 10%;
+}
+
 .nav-top {
   display: flex;
   justify-content: space-between;
@@ -57,13 +78,13 @@ header {
   margin-left: 55px;
 }
 
-#contatonav {
-  margin-left: -70px;
-}
 
 @media (max-width: 690px) {
   .logo {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -75,8 +96,21 @@ header {
   font-family: "Montserrat", sans-serif;
 }
 .nav-top a:hover {
-  color: green;
-  
+  color: #30CD9A;
+}
+
+.navbar-nav {
+  width: 450px;
+  padding-right: 30px;
+}
+
+#contatonav {
+  margin-right: 49px;
+}
+@media (max-width: 690px) {
+#contatonav{
+  margin: 0;
+}
 }
 
 .nav-link:hover{
@@ -101,7 +135,7 @@ nav a {
 }
 
 .nav-top {
-  height: 95px;
+  /* height: 95px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,19 +144,32 @@ nav a {
   margin-left: 140px;
 }
 
+
+@media (max-width: 690px) {
+  .nav-top ul {
+    margin-left: 80px;
+  }
+}
+
 /* end header */
 .mega-banner {
   background-image: url(../img/Banner_1920x500.png);
   background-position: right;
   height: 500px;
-  text-align: justify;
+  text-align: left;
   width: 100%;
-  padding: 90px;
+  padding: 25px 90px 90px;
+  padding-left: 10%;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-
+.w-45{
+  max-width: 60%;
+}
+.w-lg-50{
+  width: 100%;
+}
 @media (max-width: 690px) {
   .mega-banner{
     background-image: none;
@@ -131,22 +178,29 @@ nav a {
     padding: 30px;
     font-size: auto;
   }
-
+  .w-45{
+    max-width: 100%;
+  }
+  .w-lg-50{
+    width: 100%;
+  }
 }
 
 .mega-banner p {
-  text-align: justify;
-  font-size: 15px;
+  text-align: left;
+  font-size: 16px;
   color: black;
   line-height: 1.7;
-  font-weight: 500;
+  font-weight: 300;
   font-family: "Montserrat", sans-serif;
+  margin: 40px 0;
 }
 
 .mega-banner h3 {
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 30px;
+  white-space: nowrap;
 }
 
 @media (max-width: 690px) {
@@ -154,10 +208,11 @@ nav a {
     font-size: 40px;
     font-weight: 900;
     margin-bottom: 30px;
+    white-space: nowrap;
   }
 }
 
-.mega-banner h3 > span {
+.mega-banner h3 > span.white-txt {
   color: white;
 }
 
@@ -171,6 +226,7 @@ nav a {
     border: none;
     width: 230px;
     height: 34px;
+    font-weight: bold;
 }
 @media (max-width: 690px) {
   .main-btn button{
@@ -218,18 +274,25 @@ button:hover{
 .info-services {
   display: grid;
   grid-template-columns: 6fr 6fr;
-  grid-gap: 8px;
+  grid-gap: 28px;
   padding: 0 90px;
   height: auto;
   color: black;
   width: 100%;
   background-image: url(../img/circulo\ verde\ -\ empresas.png);
   background-repeat: no-repeat;
-  background-size:200px;
-  background-position-x: 1100px;
-  background-position-y: 178px;
+  background-size: 280px;
+  background-position-x: 103%;
+  background-position-y: 325px;
   z-index: 50;
 }
+
+@media (max-width: 1200px) {
+  .info-services {
+    background-image: none;
+  }
+}
+
 
 @media (max-width: 690px) {
   .info-services {
@@ -245,26 +308,45 @@ button:hover{
   padding: 0 20px 0 0;
 }
 
+#servicos{
+  margin-left: 05%;
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  padding: 0 88px;
+}
 
+@media (max-width: 690px) {
+  #servicos{
+    padding: 20px;
+  }
+}
+  
 .info-services p {
-  text-align: justify;
+  text-align: left;
   font-size: 15px;
-  line-height: 1.2;
-  font-weight: 400;
+  color: black;
+  line-height: 1.7;
+  font-weight: 300;
   font-family: "Montserrat", sans-serif;
 }
 
 
 .fundo {
-  width: 100%;
-  text-align: justify;
+  text-align: left;
+  width: 90%;
+  margin-left: 10%;
+  padding: 50px 10px;
+  height: 450px;
 }
 
 @media (max-width: 690px) {
   .fundo {
+    margin: 0;
     padding: 20px;
     font-family: "Montserrat", sans-serif;
-    text-align: justify;
+    text-align: left;
+    height: 250px;
   }
 }
 
@@ -276,23 +358,29 @@ button:hover{
 
 
 .capital {
-  margin: 26px 20px;
+  margin: 0;
   font-family: "Montserrat", sans-serif;
-   text-align: justify;
+   text-align: left;
+   margin-right: 10%;
+   width: 90%;
+  padding: 50px 10px;
+  height: 450px;
 }
 
 @media (max-width: 690px) {
   .capital {
-    padding: 10px;
+    margin: 0;
+    padding: 20px;
     font-family: "Montserrat", sans-serif;
-    text-align: justify;
+    text-align: left;
+    height: 329px;
   }
 }
 
 .capital h5 {
   font-family: "Montserrat", sans-serif;
-  padding: 30px 0px;
   font-weight: 900;
+  padding: 25px 0px;
 }
 
 
@@ -311,17 +399,13 @@ button:hover{
 }
 
 .empresas {
-  padding-top: 25px;
-  background-image: url(../img/simbolo\ -\ verde\ azulado.png);
-  background-repeat: no-repeat;
-  background-size: 400px;
-  background-position-x: -55px;
-  background-position-y: 100px;
+  margin-left: 10%;
 }
 
 @media (max-width: 690px) {
   .empresas {
     padding: 20px;
+    margin: 0;
   }
 
 }
@@ -342,7 +426,8 @@ button:hover{
 .desk {
   background-color: #00b7ff;
   width: 90%;
-  padding: 50px 50px;
+  margin-right: 10%;
+  padding: 20px 50px;
   height: 450px;
   line-height: 1.3;
   text-align: left;
@@ -368,6 +453,7 @@ button:hover{
     height: auto;
     width: auto;
      padding: 15px;
+     margin: 0;
   }
 }
 
@@ -378,8 +464,10 @@ button:hover{
 .hosts {
   background-color: #30cd9a;
   width: 90%;
-  padding: 50px 50px;
-  height: 470px;
+  margin-left: 10%;
+
+  padding: 20px 50px;
+  height: 490px;
   line-height: 1.3;
   text-align: left;
   margin-bottom: 30px;
@@ -391,6 +479,7 @@ button:hover{
     height: auto;
     width: auto;
     padding: 15px;
+    margin: 0;
   }
 }
 
@@ -411,8 +500,9 @@ button:hover{
 .keruak {
   background-color: #2fb6bc;
   width: 90%;
-  padding: 50px 50px;
-  height: 470px;
+  margin-right: 10%;
+  padding: 20px 50px;
+  height: 490px;
   line-height: 1.3;
   text-align: left;
   margin-bottom: 30px;
@@ -423,6 +513,7 @@ button:hover{
     height: auto;
     width: auto;
     padding: 15px;
+    margin: 0;
   }
 }
 
@@ -434,6 +525,23 @@ button:hover{
   width: 50%;
   padding-left: 15px;
   margin: 15px -10px;
+}
+
+.keruak-img-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 50%;
+  padding-left: 15px;
+  margin: 15px -35px;
+}
+
+@media (max-width: 690px) {
+  .keruak-img-main {
+    padding-left: 15px;
+    margin: 15px -10px;
+  }
 }
 
 .keruak-img img{
@@ -457,12 +565,13 @@ button:hover{
 
 .footer {
   display: grid;
+  margin-top: 35px;;
   grid-template-columns: 6fr 6fr;
   background-image: url(../img/footer_black_final.png);
-  background-size: 100%;
+  background-size: cover;
   grid-gap: 8px;
     padding: 0 90px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;   
   width: 100%;
   justify-content: center;
   height: 540px;
@@ -475,7 +584,9 @@ button:hover{
     justify-content: center;
     align-items: center;
   }
-
+  .empresas{
+    background: none;
+  }
 }
 
 .footer h3 {
@@ -498,9 +609,10 @@ button:hover{
 
 
 .rdp-content {
+  margin-left: 09%;
   margin-top: 70px;
   line-height: 2.0;
-  text-align: justify;
+  text-align: left;
   text-align: left;
   width: 100%;
   color: white;
@@ -520,11 +632,17 @@ button:hover{
 
 .formulario {
   display: flex;
+
   justify-content: center;
   align-items: center;
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.formulario .hbspt-form{
+  width: 90%;
+  text-align: center;
 }
 
 @media (max-width: 690px) {
@@ -533,13 +651,50 @@ button:hover{
     margin: 0 auto;
     padding: 0;
   }
+  .formulario .hbspt-form{
+    width: 100%;
+    padding-bottom: 15px;
+  }
+}
+.formulario .hs-input {
+    color: white;
+    border: 3px solid white;
+    margin-bottom: 15px;
+    background-color: black;
+    width: 90%;
+    padding: 15px;
+}
+.formulario .hs_submit .actions {
+  text-align: center;
 }
 
+.formulario .hs_submit input {
+    border: none;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 34px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.formulario .hs_submit input:hover {
+    background: #00B7FF;
+    color: white;
+}
+.formulario label{
+  color: #FFF;
+}
+
+.formulario .hs_submit input ::placeholder, .formulario .hs_submit input :-ms-input-placeholder, .formulario .hs_submit input ::-ms-input-placeholder {
+  color: #FFF !important;
+  opacity: 1; /* Firefox */
+}
 
 .main-rdp{
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
   padding: 0 90px;
+  margin-left: 03%;
   align-items: center;
 }
 
@@ -552,7 +707,7 @@ button:hover{
     align-items: center;
     padding: 0px;
   }
-  
+
 }
 .main-rdp p{
   margin-top: 13px;
@@ -570,7 +725,7 @@ button:hover{
 
 .img-rdp{
   height: 90px;
-  margin-top: 30px; 
+  margin-top: 30px;
   margin-right: 180px;
   margin-bottom: 20px;
 }
@@ -580,5 +735,3 @@ button:hover{
         margin: 05px auto;
   }
 }
-
-
